@@ -1,8 +1,10 @@
 This plugin uses the Steam Online Subsystem for multiplayer functionality, and works with UE4.27-UE5+. 
 
 ## Setup
- 
-First clone this repo or download a ZIP and extract the folder. You'll want to drag the Plugins folder into your projects main directory. If you already have a Plugins folder present in your project, drag the MultiplayerSessions folder into your Plugins folder.
+
+**NOTE:** This documentation covers setup on Windows and Linux only, not MacOS.
+
+First clone this repo or download a ZIP and extract the folder. You'll want to drag the Plugins folder into your projects main directory. If you already have a Plugins folder present in your directory, drag the MultiplayerSessions folder located in the downloaded Plugins folder into your existing Plugins folder.
 
 ![Screenshot](Images/Drag.png)
 
