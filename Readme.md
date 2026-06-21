@@ -1,8 +1,6 @@
-# Multiplayer Plugin Setup for Unreal Engine
+# Multiplayer Plugin Setup
 
 This plugin uses the Steam Online Subsystem for multiplayer functionality, and works with UE4.27-UE5+. 
-
-**Note:** This plugin is offered in two version: **Steam Sockets** which is the modern and preffered option, and the legacy **Steam Net Driver** option. Use the Steam Sockets version unless you have a reason to use the old legacy option.
 
 ## Setup
  
@@ -28,17 +26,12 @@ After enabling those plugins and restarting the editor, you'll need to modify so
 
 Example path: `[Project]/Config/DefaultEngine.ini` and `DefaultGame.ini`.
 
-Add the following lines to your project’s `DefaultEngine.ini` file. Note the lines specific to the plugin version you're using.
+Add the following lines to the bottom of your project’s `DefaultEngine.ini` file.
 
 ```ini
 [/Script/Engine.GameEngine]
-
-; Include these lines if using Steam Sockets, otherwise delete.
 !NetDriverDefinitions=ClearArray
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/SteamSockets.SteamSocketsNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
-
-; Include this line if using the Steam Net Driver, otherwise delete.
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemSteam.SteamNetDriver",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
 
 [OnlineSubsystem]
 DefaultPlatformService=Steam
