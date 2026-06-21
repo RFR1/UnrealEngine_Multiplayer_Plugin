@@ -20,8 +20,9 @@ A plugins window should appear, search "Online Subsystem" and "Online Subsystem 
 
 ![Screenshot](Images/Plugin_Enable2.png)
 
-After enabling those plugins and restarting the editor, you'll need to modify some '.ini' files in your project. Navigate to the Config folder in your project's main directory and find the 'DefaultEngine.ini' and 'DefaultGame.ini' files. 
-Example path: '[Project]/Config/DefaultEngine.ini and DefaultGame.ini'
+After enabling those plugins and restarting the editor, you'll need to modify some '.ini' files in your project. Navigate to the Config folder in your project's main directory and find the 'DefaultEngine.ini' and 'DefaultGame.ini' files. 'test.ini'
+
+Example path: [Project]/Config/DefaultEngine.ini and DefaultGame.ini'
 
 Add the following lines to your project’s `DefaultEngine.ini` file. Note the lines specific to the plugin version you're using.
 
