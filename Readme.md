@@ -11,6 +11,7 @@ First you'll need to make sure your project has these plugins enabled:
 - Online Subsystem Steam
 
 To enable them, in your editor window click on "Edit" on the top left corner and "Plugins" in the drop down menu. 
+
 ![Screenshot](Images/Plugin_Window.png)
 
 A plugins window should appear, search "Online Subsystem" and "Online Subsystem Steam" and ensure those plugins are enbaled. You may be prompted to restart your editor after enabling them.
