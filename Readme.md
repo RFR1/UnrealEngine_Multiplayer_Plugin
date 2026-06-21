@@ -21,7 +21,7 @@ Add the following lines to your project’s `DefaultEngine.ini` file. Note the l
 ```ini
 [/Script/Engine.GameEngine]
 
-; Include lines if using Steam Sockets, otherwise delete.
+; Include these lines if using Steam Sockets, otherwise delete.
 !NetDriverDefinitions=ClearArray
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/SteamSockets.SteamSocketsNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
 
