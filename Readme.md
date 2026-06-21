@@ -2,7 +2,7 @@
 
 This plugin uses the Steam Online Subsystem for multiplayer functionality, and works with UE4.27-UE5+. 
 
-**Note:** This plugin is offered in two version: **Steam Sockets** which is the modern and preffered option, and the legacy **Steam Net Driver**. Use the Steam Sockets version unless you have a reason to use old legacy networking implementation. 
+**Note:** This plugin is offered in two version: **Steam Sockets** which is the modern and preffered option, and the legacy **Steam Net Driver** option. Use the Steam Sockets version unless you have a reason to use the old legacy option.
 
 ## Setup
 
