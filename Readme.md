@@ -1,5 +1,3 @@
-<img width="1584" height="870" alt="image" src="https://github.com/user-attachments/assets/e0906228-30ea-4c23-b67a-24496ab5a670" /># Multiplayer Plugin
-
 This plugin uses the Steam Online Subsystem for multiplayer functionality, and works with UE4.27-UE5+. 
 
 ## Setup
