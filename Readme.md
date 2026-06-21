@@ -1,4 +1,4 @@
-# Multiplayer Plugin Setup
+# Multiplayer Plugin
 
 This plugin uses the Steam Online Subsystem for multiplayer functionality, and works with UE4.27-UE5+. 
 
