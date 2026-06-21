@@ -5,6 +5,10 @@ This plugin uses the Steam Online Subsystem for multiplayer functionality, and w
 **Note:** This plugin is offered in two version: **Steam Sockets** which is the modern and preffered option, and the legacy **Steam Net Driver** option. Use the Steam Sockets version unless you have a reason to use the old legacy option.
 
 ## Setup
+ 
+First clone this repo or download a ZIP and extract the folder. You'll want to drag the Plugins folder into your projects main directory. If you already have a Plugins folder present in your project, drag the MultiplayerSessions folder into your Plugins folder.
+
+
 
 First you'll need to make sure your project has these plugins enabled:
 - Online Subsystem
