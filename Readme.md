@@ -22,7 +22,10 @@ A plugins window should appear, search "Online Subsystem" and "Online Subsystem 
 
 ![Screenshot](Images/Plugin_Enable2.png)
 
-After enabling those plugins and restarting the editor, you'll need to modify some `.ini` files in your project. Navigate to the Config folder in your project's main directory and find the `DefaultEngine.ini` and `DefaultGame.ini` files. 
+After enabling those plugins and restarting the editor you'll need to rebuild the project. To do that, first delete the folders \'Binaries'\
+
+
+Now that your project in rebuilt, you'll need to modify some `.ini` files. Navigate to the Config folder in your project's main directory and find the `DefaultEngine.ini` and `DefaultGame.ini` files.
 
 Example path: `[Project]/Config/DefaultEngine.ini` and `DefaultGame.ini`.
 
@@ -62,3 +65,5 @@ MaxPlayers=100
 ```
 
 > The value for 'MaxPlayers' is set as an example, you can change it to whatever your project needs.
+
+
