@@ -6,9 +6,9 @@ This plugin uses the Steam Online Subsystem for multiplayer functionality, and w
  
 First clone this repo or download a ZIP and extract the folder. You'll want to drag the Plugins folder into your projects main directory. If you already have a Plugins folder present in your project, drag the MultiplayerSessions folder into your Plugins folder.
 
+![Screenshot](Images/Drag.png)
 
-
-First you'll need to make sure your project has these plugins enabled:
+You'll then need to make sure your project has these plugins enabled:
 - Online Subsystem
 - Online Subsystem Steam
 
