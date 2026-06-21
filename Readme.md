@@ -4,7 +4,7 @@ This plugin uses the Steam Online Subsystem for multiplayer functionality, and w
 
 **NOTE:** This documentation covers setup on Windows and Linux only, not MacOS.
 
-First clone this repo or download a ZIP and extract the folder. You'll want to drag the Plugins folder into your projects main directory. If you already have a Plugins folder present in your directory, drag the MultiplayerSessions folder located in the downloaded Plugins folder into your existing Plugins folder.
+First clone this repo or download a ZIP and extract the folder. You'll want to drag the Plugins folder into your project's main directory. If you already have a Plugins folder present in your directory, drag the MultiplayerSessions folder located in the downloaded Plugins folder into your existing Plugins folder.
 
 ![Screenshot](Images/Drag.png)
 
@@ -69,15 +69,15 @@ MaxPlayers=100
 
 > The value for 'MaxPlayers' is set as an example, you can change it to whatever your project needs.
 
-After adding these lines to the specified '.ini' files, you'll need to build your project again using your IDE. **Note:** when building your project, make sure the editor is closed to avoid compiling issues. 
+After adding these lines to the specified '.ini' files, you'll need to build your project again using your IDE. **Note:** When building your project, make sure the editor is closed to avoid compiling issues. 
 
 Once built, delete the folders: `Binaries`, `Intermediate`, and `Saved` in your project's main directory. 
 
 Then regenerate projects files:
 - On Windows, right click on the .uproject executable and click generate projects files.
-- On Linux, run the GenerateProjectFiles.sh script (found in the Unreal Engine direcotry, e.g., UnrealEngine-4.27/./GenerateProjectFiles.sh) on the .uproject executable of your project.
+- On Linux, run the GenerateProjectFiles.sh script (found in the Unreal Engine directory, e.g., UnrealEngine-4.27/./GenerateProjectFiles.sh) on the .uproject executable of your project.
 
 Linux example command: /Path/To/UnrealEngineDir/./GenerateProjectFiles.sh /Path/To/ProjectDir/Project.uproject
  
-Once you have regenerated projects files, rebuild your project again. If everything builds successfully the plugin is installed and ready to use. 
+Once you have regenerated project files, rebuild your project again. If everything builds successfully the plugin is installed and ready to use. 
 
