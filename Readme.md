@@ -16,16 +16,15 @@ To enable them, in your editor window click on "Edit" on the top left corner and
 
 ![Screenshot](Images/Plugin_Window.png)
 
-A plugins window should appear, search "Online Subsystem" and "Online Subsystem Steam" and ensure those plugins are enbaled. You may be prompted to restart your editor after enabling them.
+A plugins window should appear, search "Online Subsystem" and "Online Subsystem Steam" and ensure those plugins are enabled. You may be prompted to restart your editor after enabling them.
 
 ![Screenshot](Images/Plugin_Enable1.png)
 
 ![Screenshot](Images/Plugin_Enable2.png)
 
-After enabling those plugins and restarting the editor you'll need to rebuild the project. To do that, first delete the folders 'Binaries'
+After enabling those plugins and restarting the editor you'll want to build the modules from the plugin. To do that, first close the editor then open the project in an IDE of your choice (I recommend using Rider or Visual Studio as they have native support for Unreal Engine) and click build solution.
 
-
-Now that your project in rebuilt, you'll need to modify some `.ini` files. Navigate to the Config folder in your project's main directory and find the `DefaultEngine.ini` and `DefaultGame.ini` files.
+Once you build the modules, you'll need to modify some `.ini` files. Navigate to the Config folder in your project's main directory and find the `DefaultEngine.ini` and `DefaultGame.ini` files.
 
 Example path: `[Project]/Config/DefaultEngine.ini` and `DefaultGame.ini`.
 
@@ -66,4 +65,15 @@ MaxPlayers=100
 
 > The value for 'MaxPlayers' is set as an example, you can change it to whatever your project needs.
 
+After adding these lines to the specified '.ini' files, you'll need to build your project again using your IDE. **Note:** when building your project, make sure the editor is closed to avoid compiling issues. 
+
+Once built, delete the folders: `Binaries`, `Intermediate`, and `Saved` in your project's main directory. 
+
+Then regenerate projects files:
+- On Windows right click on the .uproject execetable and click generate projects files.
+- On Linux, run the GenerateProjectFiles.sh script (found in the Unreal Engine direcotry, e.g., UnrealEngine-4.27/./GenerateProjectFiles.sh) on the .uproject execeutable of your project.
+
+Linux example command: /Path/To/UnrealEngineDir/./GenerateProjectFiles.sh /Path/To/ProjectDir/Project.uproject
+ 
+Once you have regenerated projects files, rebuild your project again.
 
