@@ -69,13 +69,13 @@ MaxPlayers=100
 
 > The value for 'MaxPlayers' is set as an example, you can change it to whatever your project needs.
 
-After adding these lines to the specified '.ini' files, you'll need to build your project again using your IDE. **Note:** When building your project, make sure the editor is closed to avoid compiling issues. 
+After adding these lines to the specified `.ini` files, you'll need to build your project again using your IDE. **Note:** When building your project, make sure the editor is closed to avoid compiling issues. 
 
 Once built, delete the folders: `Binaries`, `Intermediate`, and `Saved` in your project's main directory. 
 
 Then regenerate projects files:
-- On Windows, right click on the .uproject executable and click generate projects files.
-- On Linux, run the GenerateProjectFiles.sh script (found in the Unreal Engine directory, e.g., UnrealEngine-4.27/./GenerateProjectFiles.sh) on the .uproject executable of your project.
+- On Windows, right click on the `.uproject` executable and click generate projects files.
+- On Linux, run the `GenerateProjectFiles.sh` script (found in the Unreal Engine directory, e.g., UnrealEngine-4.27/./GenerateProjectFiles.sh) on the `.uproject` executable of your project.
 
 Linux example command: /Path/To/UnrealEngineDir/./GenerateProjectFiles.sh /Path/To/ProjectDir/Project.uproject
  
