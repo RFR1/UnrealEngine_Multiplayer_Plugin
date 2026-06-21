@@ -16,7 +16,9 @@ To enable them, in your editor window click on "Edit" on the top left corner and
 
 A plugins window should appear, search "Online Subsystem" and "Online Subsystem Steam" and ensure those plugins are enbaled. You may be prompted to restart your editor after enabling them.
 
+![Screenshot](Images/Plugin_Enable1.png)
 
+![Screenshot](Images/Plugin_Enable2.png)
 
 After enabling those plugins, you'll need to modify some '.ini' files in your project. Navigate to the Config folder in your project's main directory and find the 'DefaultEngine.ini' and 'DefaultGame.ini' files.
 
