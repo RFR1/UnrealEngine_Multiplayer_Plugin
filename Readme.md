@@ -18,10 +18,12 @@ To enable them, in your editor window click on "Edit" on the top left corner and
 ![Screenshot](Images/Plugin_Window.png)
 
 A plugins window should appear, search "Online Subsystem", "Online Subsystem Steam", and "Steam Sockets" and ensure those plugins are enabled. You may be prompted to restart your editor after enabling them.
+
 ![Screenshot](Images/Plugin_Enable1.png)
 
-![Screenshot](Images/Plugin_Enable3.png)
+![Screenshot](Images/Plugin_Enable2.png)
 
+[Screenshot](Images/Plugin_Enable3.png)
 
 
 After enabling those plugins and restarting the editor you'll want to build the modules from the plugin. To do that, first close the editor then open the project in an IDE of your choice (I recommend using Rider or Visual Studio as they have native support for Unreal Engine) and click build solution.
