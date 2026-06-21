@@ -1,20 +1,32 @@
-# Steam Online Subsystem Setup for Unreal Engine
+# Multiplayer Plugin Setup for Unreal Engine
 
-This guide shows the required `.ini` settings for enabling Steam multiplayer support in an Unreal Engine project.
+This plugin uses the Steam Online Subsystem for multiplayer functionality, and works with UE4.27-UE5+. 
 
-## Engine.ini
+**Note:** This plugin is offered in two version: **Steam Sockets** which is the modern and preffered option, and the legacy **Steam Net Driver**. Use the Steam Sockets version unless you have a reason to use old legacy networking implementation. 
 
-Add the following lines to your project’s `Config/DefaultEngine.ini` file.
+## Setup
+
+First you'll need to make sure your project has these plugins enabled:
+- Online Subsystem
+- Online Subsystem Steam
+
+To enable them, in your editor window click on "Edit" on the top left corner and "Plugins" in the drop down menu. A plugins window should appear, search "Online Subsystem" and "Online Subsystem Steam" and ensure those plugins are enbaled. You may be prompted to restart your editor after enabling them.
+
+
+
+After enabling those plugins, you'll need to modify some '.ini' files in your project. Navigate to the Config folder in your project's main directory and find the 'DefaultEngine.ini' and 'DefaultGame.ini' files.
+
+Add the following lines to your project’s `DefaultEngine.ini` file. Note the lines specific to the plugin version you're using.
 
 ```ini
 [/Script/Engine.GameEngine]
 
-; Use this line if using the Steam Net Driver
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemSteam.SteamNetDriver",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
-
-; Use these lines if using Steam Sockets
+; Include lines if using Steam Sockets, otherwise delete.
 !NetDriverDefinitions=ClearArray
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/SteamSockets.SteamSocketsNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
+
+; Include this line if using the Steam Net Driver, otherwise delete.
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemSteam.SteamNetDriver",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
 
 [OnlineSubsystem]
 DefaultPlatformService=Steam
@@ -33,15 +45,15 @@ NetConnectionClassName="OnlineSubsystemSteam.SteamNetConnection"
 IpNetDriverClassName="/Script/OnlineSubsystemUtils.IpNetDriver"
 ```
 
-> `SteamDevAppId=480` is Steam’s test App ID. Replace it with your own Steam App ID when you have one.
+> `SteamDevAppId=480` is Steam’s test App ID. Replace it with your own Steam App ID if you have one.
 
-## Game.ini
 
-Add the following lines to your project’s `Config/DefaultGame.ini` file.
+
+Now add the following lines to your project’s `DefaultGame.ini` file.
 
 ```ini
 [/Script/Engine.GameSession]
 MaxPlayers=100
 ```
 
-> Change `MaxPlayers` to whatever player limit your game needs.
+> The value for 'MaxPlayers' is set as an example, you can change it to whatever your project needs.
