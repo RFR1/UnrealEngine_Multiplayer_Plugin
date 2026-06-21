@@ -75,5 +75,5 @@ Then regenerate projects files:
 
 Linux example command: /Path/To/UnrealEngineDir/./GenerateProjectFiles.sh /Path/To/ProjectDir/Project.uproject
  
-Once you have regenerated projects files, rebuild your project again.
+Once you have regenerated projects files, rebuild your project again. If everything builds successfully the plugin is installed and ready to use. 
 
